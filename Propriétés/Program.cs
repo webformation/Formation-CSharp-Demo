@@ -10,14 +10,24 @@ namespace Propriétés
     {
         static void Main(string[] args)
         {
-            Personne p1 = new Personne("Jean",new DateTime(2000,5,25));
+            Personne p1 = new Personne("Dupond","Jean",new DateTime(2000,5,25));
             Console.WriteLine(p1);
         }
     }
 }
 class Personne
 {
-    public string nom { get; set; }
+
+    private string _nom;
+        public string nom
+    {
+        get { return _nom; }
+        set
+        {
+            if (value != null && value.Length >= 2) { _nom = value; }
+        }
+    }
+    public string prenom { get; set; }
     private DateTime naissance;
     public int age
     {
@@ -27,13 +37,14 @@ class Personne
             return t.Days / 365;
         }
     }
-    public Personne(String nom, DateTime naissance)
+    public Personne(string nom, string prenom,  DateTime naissance)
     {
         this.nom = nom;
+        this.prenom = prenom;
         this.naissance = naissance;
     }
     public override string ToString()
     {
-        return nom + " : " + age + " ans";
+        return prenom + " " + nom + " : " + age + " ans";
     }
 }
