@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception", "Exception\Exce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enum", "Enum\Enum.csproj", "{D7B9A79A-9E94-45AD-AC75-A0296B24BA7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heritage", "ConsoleApp1\Heritage.csproj", "{23E6090D-485C-4413-BE14-79A17CEF635C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heritage", "Heritage\Heritage.csproj", "{23E6090D-485C-4413-BE14-79A17CEF635C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
