@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D4D7ACF-618F-4330-92D9-AF765A738E88}</ProjectGuid>
+    <ProjectGuid>{DE403FEB-641C-412E-A4EB-FB449213BD63}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Demo</RootNamespace>
-    <AssemblyName>Demo</AssemblyName>
+    <RootNamespace>ArrayList</RootNamespace>
+    <AssemblyName>ArrayList</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -22,7 +22,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
