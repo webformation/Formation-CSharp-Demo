@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception", "Exception\Exce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enum", "Enum\Enum.csproj", "{D7B9A79A-9E94-45AD-AC75-A0296B24BA7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heritage", "ConsoleApp1\Heritage.csproj", "{23E6090D-485C-4413-BE14-79A17CEF635C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{D7B9A79A-9E94-45AD-AC75-A0296B24BA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7B9A79A-9E94-45AD-AC75-A0296B24BA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7B9A79A-9E94-45AD-AC75-A0296B24BA7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23E6090D-485C-4413-BE14-79A17CEF635C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23E6090D-485C-4413-BE14-79A17CEF635C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23E6090D-485C-4413-BE14-79A17CEF635C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23E6090D-485C-4413-BE14-79A17CEF635C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
