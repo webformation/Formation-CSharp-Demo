@@ -6,27 +6,27 @@ using System.Threading.Tasks;
 
 namespace Statique
 {
-class Personne : IDisposable
-{
-    public string nom;
-    public int age;
-    static int nombre = 0;
-    public Personne(string nom, int age)
+    class Personne : IDisposable
     {
-        this.nom = nom;
-        this.age = age;
-        ++nombre;
-    }
-    public void Dispose()
-    {
-        --nombre;
-    }
-    public static int nb
-    {
-        get
+        public string nom;
+        public int age;
+        static int nombre = 0;
+        public Personne(string nom, int age)
         {
-            return nombre;
+            this.nom = nom;
+            this.age = age;
+            ++nombre;
+        }
+        public void Dispose()
+        {
+            --nombre;
+        }
+        public static int nb
+        {
+            get
+            {
+                return nombre;
+            }
         }
     }
-}
 }
