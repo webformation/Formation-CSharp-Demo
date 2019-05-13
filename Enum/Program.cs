@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ExempleEnum
 {
-class Program
-{
-    static void Main(string[] args)
+    class Program
     {
-        jour j = jour.lundi;
-        Console.WriteLine(j);
+        static void Main(string[] args)
+        {
+            jour j = jour.lundi;
+            Console.WriteLine(j);
+        }
     }
-}
-enum jour { lundi,mardi,mercredi, jeudi, vendredi, samed,dimanche}
+    enum jour { lundi,mardi,mercredi, jeudi, vendredi, samed,dimanche}
 }
