@@ -14,7 +14,6 @@ namespace ExempleEvenement
             Console.WriteLine(c.connexion); // vrai car la connexion a été ouverte dans le constructeur de Client
             System.Threading.Thread.Sleep(1000);
             Console.WriteLine(c.connexion); // false car le handler a été activé
-            Console.ReadKey();
         }
     }
     class BaseDonnee
