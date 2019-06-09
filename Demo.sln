@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodeExtension", "Methode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pointeur", "Pointeur\pointeur.csproj", "{B8585C3C-6E67-4706-ACD3-832CA0ECC003}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinvoke", "Pinvoke\Pinvoke.csproj", "{2834D01A-B38D-41C9-A645-2435D12A4C14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +209,14 @@ Global
 		{B8585C3C-6E67-4706-ACD3-832CA0ECC003}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B8585C3C-6E67-4706-ACD3-832CA0ECC003}.Release|x86.ActiveCfg = Release|Any CPU
 		{B8585C3C-6E67-4706-ACD3-832CA0ECC003}.Release|x86.Build.0 = Release|Any CPU
+		{2834D01A-B38D-41C9-A645-2435D12A4C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2834D01A-B38D-41C9-A645-2435D12A4C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2834D01A-B38D-41C9-A645-2435D12A4C14}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2834D01A-B38D-41C9-A645-2435D12A4C14}.Debug|x86.Build.0 = Debug|Any CPU
+		{2834D01A-B38D-41C9-A645-2435D12A4C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2834D01A-B38D-41C9-A645-2435D12A4C14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2834D01A-B38D-41C9-A645-2435D12A4C14}.Release|x86.ActiveCfg = Release|Any CPU
+		{2834D01A-B38D-41C9-A645-2435D12A4C14}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
