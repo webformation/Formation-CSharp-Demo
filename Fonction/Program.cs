@@ -34,13 +34,19 @@ namespace Fonction
             Console.WriteLine(p1.nom);
             change(p1);
             Console.WriteLine(p1.nom);
-void init(out int k)
-{
-    k = 3;
-}
-int j;
-init(out j);
-Console.WriteLine(j);
+            void init(out int k)
+            {
+                k = 3;
+            }
+            int j;
+            init(out j);
+            Console.WriteLine(j);
+            void nbvar( params int[]  vars)
+            { 
+               foreach (var x in vars) { Console.WriteLine(x); }
+            }
+            nbvar(1);
+            nbvar(10, 20);
         }
     }
     class Personne
