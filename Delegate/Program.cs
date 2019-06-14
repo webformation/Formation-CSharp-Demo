@@ -18,8 +18,10 @@ namespace Delegate
             e(5);
             e = delegate(int j) { Console.WriteLine("Méthode anonyme : {0}", j); };
             e(7);
+            Console.WriteLine("------------ 2 fonctions");
             e += f1;
             e(3);
+            Console.WriteLine("------------ Lambda");
             e =  x => Console.WriteLine("Lambda : {0}", x) ;
             e(0);
             essai2 f;
