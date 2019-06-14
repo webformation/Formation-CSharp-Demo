@@ -40,7 +40,7 @@ namespace Heritage
         }
         public abstract void Skype();
     }
-    public class Ami : Personne
+    public class Ami : Personne,Icommmunication
     {
         public string prenom;
         public Ami(string prenom, string nom) : base(nom)
@@ -59,6 +59,18 @@ namespace Heritage
         {
             Console.WriteLine("Lancer Skype avec " + prenom);
         }
+
+        public void Courrier()
+        {
+            Console.WriteLine("Envoyer une lettre à " + prenom);
+        }
+    }
+    interface Icommmunication
+    {
+        void Skype();
+        void Tel();
+        void SMS();
+        void Courrier();
     }
 }
 
