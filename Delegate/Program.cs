@@ -33,6 +33,10 @@ namespace Delegate
             // passe à la compilation, mais stack overflow à l'exécution
             f(32);
             calcul c;
+            c = ajoute2;
+            Console.WriteLine(c(5));
+            c += ajoute3;
+            Console.WriteLine(c(5));
             //c = n => n * ((n <= 0)?1:c(n-1));
             // ne passe pas à la compilation : Use of unassigned local variable 'c'	
             int? i = 5;
@@ -43,5 +47,14 @@ namespace Delegate
             //Console.WriteLine(c(5));
 
         }
+        static int ajoute2(int k)
+        {
+            return k + 2;
+        }
+        static int ajoute3(int k)
+        {
+            return k + 3;
+        }
     }
+    
 }
