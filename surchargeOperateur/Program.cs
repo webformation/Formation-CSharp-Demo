@@ -12,6 +12,7 @@ namespace SurchargeOperateur
             Personne p1 = new Personne("Dupond");
             Personne p2 = new Personne("Dupond");
             Console.WriteLine(p1 == p2);
+            Console.WriteLine(p1.Equals(p2));
             Console.ReadKey();
         }
     }
@@ -36,8 +37,7 @@ namespace SurchargeOperateur
             Personne p = obj as Personne;
             if (p == null) return false; 
              */
-
-            if (obj is Personne)
+      if (obj is Personne)
             {
                 return this.nom == ((Personne)obj).nom;
             }

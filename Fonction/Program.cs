@@ -25,10 +25,13 @@ namespace Fonction
             }
             refmulti(ref i);
             Console.WriteLine(i); // affiche 10
-            void change(Personne p)
+            void change(in Personne p)
             {
                 p.nom = "raz";
+                //change1(ref p);
+;               //p = new Personne();
             }
+            void change1(ref Personne p) { }
             Personne p1 = new Personne();
             p1.nom = "Jean";
             Console.WriteLine(p1.nom);
@@ -45,8 +48,15 @@ namespace Fonction
             { 
                foreach (var x in vars) { Console.WriteLine(x); }
             }
-            nbvar(1);
-            nbvar(10, 20);
+            nbvar();
+            nbvar(10, 20,30,50);
+            
+            int f10(int il, float f=10, object o = null)
+            {
+                string txt = (o == null) ? "null" : "pas null";
+                return il + (int)f;
+            }
+            f10( o: "text",f:50,il:2);
         }
     }
     class Personne

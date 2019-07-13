@@ -8,7 +8,7 @@ namespace Delegate
     delegate void essai(int i);
     delegate string essai2(int i);
     delegate int calcul(int i);
-
+    delegate int mondelegate(int i);
     class Program
     {
         static void f1(int i) { Console.WriteLine("f1 : {0}", i); }
@@ -37,15 +37,27 @@ namespace Delegate
             Console.WriteLine(c(5));
             c += ajoute3;
             Console.WriteLine(c(5));
+            var k = c(5);
+            Console.WriteLine(k);
             //c = n => n * ((n <= 0)?1:c(n-1));
             // ne passe pas à la compilation : Use of unassigned local variable 'c'	
             int? i = 5;
             c = n => n + (int)i;
+            c = (n) => { return n + 10; };
+            Console.WriteLine(c(5));
+            c = n => n + 10;
+            Console.WriteLine(c(5));
+            int par = 10;
+            c = n => n + par;
+            Console.WriteLine(c(5));
+            par = 20;
             Console.WriteLine(c(5));
             i = null;
             // erreur lors de l'exécution avec la valeur null
             //Console.WriteLine(c(5));
-
+            Decimal dc = 10;
+            double dbl = (double)dc;
+            mondelegate f10 = z => z + 1000;
         }
         static int ajoute2(int k)
         {
